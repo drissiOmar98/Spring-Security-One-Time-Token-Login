@@ -9,7 +9,6 @@ Enhance your application's security with **passwordless authentication** using S
   <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jwt&logoColor=white">
 </p>
 
----
 
 ## 📖 Overview
 
@@ -23,7 +22,7 @@ This **Spring Boot 3.x** application showcases a modern approach to authenticati
 
 This approach improves **security** and **user experience**, eliminating the need for passwords while ensuring safe access.
 
----
+
 
 ## 🚀 Features
 
@@ -33,9 +32,6 @@ This approach improves **security** and **user experience**, eliminating the nee
 - 🛠 **Easy Test Setup** – InMemoryUserDetailsManager for quick testing  
 - 🔄 **Custom OTT Success Handler** – redirects after email delivery  
 
----
-
----
 
 ## ✨ Benefits of Using This Project  
 
@@ -48,7 +44,6 @@ This approach improves **security** and **user experience**, eliminating the nee
 - ✅ **Improved User Experience** – Simplifies login for users by removing password management while maintaining strong authentication standards.  
 
 
----
 ## 🖥 Pages / Flow
 
 1. **Home Page (`index.jte`)**  
@@ -60,7 +55,6 @@ This approach improves **security** and **user experience**, eliminating the nee
 3. **Email Template (`one_time_token_email.html`)**  
    - Clean, modern HTML design for sending magic links via email.  
 
----
 
 
 ## ⚙️ Project Requirements
@@ -70,7 +64,6 @@ This approach improves **security** and **user experience**, eliminating the nee
 - Maven or Gradle build tool  
 - Email service (MailDev for testing / SendGrid for production)  
 
----
 
 ## 🧩 Dependencies
 
@@ -85,8 +78,6 @@ Key dependencies used in this project:
 - **Spring Boot DevTools** – for hot reloading during development  
 - **Spring Boot Actuator** – monitoring and application metrics  
  
-
----
 ## 🛡️ Security Considerations  
 
 - 🔑 **Single-Use, Time-Limited Tokens** – Each one-time token (OTT) can only be used once and expires after a short period to prevent replay attacks.  
