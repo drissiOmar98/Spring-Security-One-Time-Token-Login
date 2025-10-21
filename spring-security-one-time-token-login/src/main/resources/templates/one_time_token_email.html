@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Your One-Time Token</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f6f8fa; color: #333; padding: 20px; }
+        .container { background-color: #ffffff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 20px; max-width: 600px; margin: auto; }
+        h1 { color: #007bff; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .token { font-size: 22px; font-weight: bold; color: #222; }
+        .button { display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; border-radius: 8px; text-decoration: none; }
+        .button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🔐 Your One-Time Token</h1>
+    <p>You attempted to log in using a one-time token. Here it is:</p>
+    <p class="token" th:text="${token}">TOKEN_PLACEHOLDER</p>
+    <p>Or click the button below to log in instantly:</p>
+    <p><a th:href="${link}" class="button">Log In</a></p>
+    <p>If you didn’t request this, please ignore this email.</p>
+</div>
+</body>
+</html>
